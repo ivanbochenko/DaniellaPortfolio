@@ -5,8 +5,7 @@
 <style>
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
+		padding: 1em 2em;
 	}
 
 	ul {
@@ -27,11 +26,12 @@
 	}
 
 	[aria-current] {
+		font-weight: bold;
 		position: relative;
 		display: inline-block;
 	}
 
-	[aria-current]::after {
+	/* [aria-current]::after {
 		position: absolute;
 		content: '';
 		width: calc(100% - 1em);
@@ -39,19 +39,19 @@
 		background-color: rgb(255,62,0);
 		display: block;
 		bottom: -1px;
-	}
+	} */
 
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
+		padding: 0.5em 1em;
 		display: block;
 	}
 </style>
 
 <nav>
 	<ul>
-		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>Work</a></li>
 		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a></li>
+		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>Work</a></li>
 		<li><a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>Contact</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
