@@ -15,6 +15,13 @@
 		margin: 0 0 1em 0;
 		line-height: 1.5;
 	}
+	
+	img{
+		width: 100%;
+		max-width: 400px;
+		margin: 0 0 1em 0
+	}
+	
 </style>
 
 <svelte:head>
@@ -30,5 +37,6 @@
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
 		<li><a rel='prefetch' href='blog/{post.slug}'>{post.title}</a></li>
+		<img src="{post.thumbnail}" alt="">
 	{/each}
 </ul>

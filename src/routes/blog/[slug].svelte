@@ -51,6 +51,12 @@
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
 	}
+
+	img {
+		width: 100%;
+		max-width: 800px;
+		margin: 0 0 1em 0
+	}
 </style>
 
 <svelte:head>
@@ -58,6 +64,7 @@
 </svelte:head>
 
 <h1>{post.title}</h1>
+<img src="{post.thumbnail}" alt="thumbnail">
 
 <div class='content'>
 	{@html post.html}
