@@ -33,7 +33,7 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Daniella Kaligorsky Portfolio</title>
 </svelte:head>
 
 <h1>Great success!</h1>
@@ -44,3 +44,4 @@
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p>Ok, lets go!</p>
