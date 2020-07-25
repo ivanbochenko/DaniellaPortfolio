@@ -1,6 +1,6 @@
 ---
 slug: SHIRO
 title: Wireless Charger - SHIRO
-thumbnail: /uploads/shiro.png
+thumbnail: /uploads/shirol.png
 ---
 Pruduct Design, Industrial Design, UI/UX
