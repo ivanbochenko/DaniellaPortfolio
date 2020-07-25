@@ -37,8 +37,8 @@
 	}
 
 	img:hover {
-		-webkit-filter: brightness(70%);
-		filter: brightness(70%);
+		-webkit-filter: brightness(60%);
+		filter: brightness(60%);
 	}
 
 </style>

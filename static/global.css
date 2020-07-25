@@ -15,8 +15,16 @@ h1, figure, p {
 	text-align: center;
 }
 
+/* Debugger */
+
+/* * {
+	background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important;
+ } */
+
 @media (min-width: 400px) {
 	body {
-		
+		margin: 0 0 0 0;
 	}
 }

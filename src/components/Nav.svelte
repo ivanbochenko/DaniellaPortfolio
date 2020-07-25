@@ -17,7 +17,7 @@
 	}
 
 
-	a {
+	.a {
 		text-decoration: none;
 		padding: 0.5em 1em;
 		display: block;
@@ -39,9 +39,21 @@
 		position: absolute;
 		top: -2px;		
 	}
+	.icons{		
+		display: block;
+		float: right;
+		padding: 0.5em 5em 0em ;
+	}
+
+	.icon{
+		padding: 0em 0.5em  ;
+			
+		display: block;
+		float: left;
+	}
 
 	[aria-current] {
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 </style>
@@ -49,17 +61,23 @@
 <nav>
 	<div>
 		<ul>
-			<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a></li>
-			<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>Work</a></li>
-			<li><a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>Contact</a></li>
+			<li><a class="a" aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a></li>
+			<li><a class="a" aria-current='{segment === undefined ? "page" : undefined}' href='.'>Work</a></li>
+			<li><a class="a" aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>Contact</a></li>
 
 			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 				the blog data when we hover over the link or tap it on a touchscreen -->
-			<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Blog</a></li>
+			<li><a class="a" rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Blog</a></li>
 			
 		</ul>
 	</div>
-	<div><h1 class="logo">DK</h1></div>
-	<div></div>
+	<div>
+		<h1 class="logo">DK</h1>
+	</div>
+	<div class="icons">
+		<a class="icon" href="#"><img src="behance.svg" alt=""></a>
+		<a class="icon" href="#"><img src="linkedin.svg" alt=""></a>
+		<a class="icon" href="#"><img src="instagram.svg" alt=""></a>
+	</div>
 	
 </nav>
