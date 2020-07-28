@@ -41,13 +41,30 @@
 		filter: brightness(60%);
 	}
 
+	.masthead {
+		height: 30vw;
+	}
+	.masthead h1 {
+		color: rgb(40, 40, 40);
+		font-size: 3vw;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 44px;
+		padding-top: 8vw;
+		text-align: center;
+	}
+
 </style>
 
 <svelte:head>
 	<title>Daniella Kaligorsky Portfolio</title>
 </svelte:head>
 
-<h1><b>Daniella Kaligorsky</b></h1>
+<div class="masthead">
+	<h1 >Daniella Kaligorsky</h1>
+	<p>Product Designer</p>
+</div>
+
 
 <figure>
 	{#each posts as post}
